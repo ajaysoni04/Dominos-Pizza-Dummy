@@ -1,0 +1,286 @@
+ Private Sub Command1_Click()
+Form1.Visible = False
+Form2.Visible = True
+End Sub
+
+Private Sub Image1_Click()
+
+End Sub
+
+Private Sub Timer1_Timer()
+If Image2.Visible = True Then
+Image2.Visible = False
+Image4.Visible = True
+ElseIf Image4.Visible = True Then
+Image4.Visible = False
+Image2.Visible = True
+End If
+End Sub
+
+Private Sub Timer2_Timer()
+If Image3.Visible = True Then
+Image3.Visible = False
+Image5.Visible = True
+ElseIf Image5.Visible = True Then
+Image5.Visible = False
+Image3.Visible = True
+End If
+End Sub 
+
+Private Sub Form2_Load()
+Frame2.Visible = False
+End Sub
+
+Private Sub Command1_Click()
+Frame2.Visible = True
+End Sub
+
+Private Sub Command2_Click()
+If Text1.Text = "" Or Text2.Text = "" Then
+MsgBox "mobile no or password cannot be blank"
+End If
+If Text2.Text = Text11.Text Then
+ If Text1.Text = Val(Text5.Text) Then
+ Form2.Visible = False
+ Form3.Visible = True
+ End If
+Else
+MsgBox "wrong password !!!!"
+End If
+If Text1.Text = Text5.Text Then
+Else
+MsgBox "wrong mobile no entered!!!"
+End If
+ End Sub
+
+Private Sub Command3_Click()
+Frame3.Visible = True
+End Sub
+
+Private Sub Command4_Click(Index As Integer)
+Frame3.Visible = False
+End Sub
+Private Sub Command5_Click()
+Dim d, e, f As String
+Dim a, b As String
+Dim c As Double
+a = Text3.Text
+b = Text4.Text
+c = Text5.Text
+d = Text7.Text
+e = Text10.Text
+f = Text11.Text
+If Text3.Text = "" Then
+MsgBox "first name cannot be blank"
+If Text4.Text = "" Then
+MsgBox "last name cannot be blank"
+If Text5.Text = "" Then
+MsgBox "please enter mobile no"
+If Option1 = False And Option2 = False Then
+MsgBox "please select gender"
+End If
+End If
+End If
+End If
+Frame3.Visible = False
+MsgBox "now login with signup details"
+End Sub
+
+Private Sub Command6_Click()
+Frame2.Visible = False
+End Sub
+
+Private Sub Check1_Click()
+Text19.Text = Val(220 * Text1.Text)
+End Sub
+
+Private Sub Check10_Click()
+Text33.Text = 330 * Text10.Text
+End Sub
+
+Private Sub Check11_Click()
+Text32.Text = 270 * Text11.Text
+End Sub
+
+Private Sub Check12_Click()
+Text31.Text = 240 * Text12.Text
+End Sub
+
+Private Sub Check13_Click()
+Text37.Text = 430 * Text13.Text
+End Sub
+
+Private Sub Check14_Click()
+Text36.Text = 330 * Text14.Text
+End Sub
+
+Private Sub Check15_Click()
+Text35.Text = 250 * Text15.Text
+End Sub
+
+Private Sub Check16_Click()
+Text41.Text = 460 * Text16.Text
+End Sub
+
+Private Sub Check17_Click()
+Text40.Text = 350 * Text17.Text
+End Sub
+
+Private Sub Check18_Click()
+Text39.Text = 270 * Text18.Text
+End Sub
+
+Private Sub Check2_Click()
+Text20.Text = Val(300 * Text2.Text)
+End Sub
+
+Private Sub Check3_Click()
+Text21.Text = Val(400 * Text3.Text)
+End Sub
+
+Private Sub Check4_Click()
+Text25.Text = 470 * Text4.Text
+End Sub
+
+Private Sub Check5_Click()
+Text24.Text = 340 * Text5.Text
+End Sub
+
+Private Sub Check6_Click()
+Text23.Text = 260 * Text6.Text
+End Sub
+
+Private Sub Check7_Click()
+Text29.Text = 360 * Text7.Text
+End Sub
+
+Private Sub Check8_Click()
+Text28.Text = 300 * Text8.Text
+End Sub
+
+Private Sub Check9_Click()
+Text27.Text = 230 * Text9.Text
+
+End Sub
+
+Private Sub Command1_Click()
+Frame2.Visible = True
+End Sub
+
+Private Sub Command10_Click()
+Text34.Text = Val(Text31.Text) + Val(Text32.Text) + Val(Text33.Text)
+Text46.Text = Val(Text10.Text) + Val(Text11.Text) + Val(Text12.Text)
+End Sub
+
+Private Sub Command11_Click()
+Text38.Text = Val(Text35.Text) + Val(Text36.Text) + Val(Text37.Text)
+Text47.Text = Val(Text13.Text) + Val(Text14.Text) + Val(Text15.Text)
+End Sub
+
+Private Sub Command12_Click()
+Text42.Text = Val(Text39.Text) + Val(Text40.Text) + Val(Text41.Text)
+Text48.Text = Val(Text16.Text) + Val(Text17.Text) + Val(Text18.Text)
+End Sub
+
+Private Sub Command13_Click()
+Form3.Visible = False
+Form4.Visible = True
+End Sub
+
+Private Sub Command14_Click()
+Label43.Caption = Form2.Text5.Text
+End Sub
+
+Private Sub Command2_Click()
+Frame3.Visible = True
+End Sub
+
+Private Sub Command3_Click()
+Frame4.Visible = True
+End Sub
+
+Private Sub Command4_Click()
+Frame5.Visible = True
+End Sub
+
+Private Sub Command5_Click()
+Frame6.Visible = True
+End Sub
+
+Private Sub Command6_Click()
+Frame7.Visible = True
+End Sub
+
+Private Sub Command7_Click()
+Text22.Text = Val(Text19.Text) + Val(Text20.Text) + Val(Text21.Text)
+Text43.Text = Val(Text1.Text) + Val(Text2.Text) + Val(Text3.Text)
+End Sub
+
+Private Sub Command8_Click()
+Text26.Text = Val(Text23.Text) + Val(Text24.Text) + Val(Text25.Text)
+Text44.Text = Val(Text4.Text) + Val(Text5.Text) + Val(Text6.Text)
+End Sub
+
+Private Sub Command9_Click()
+Text30.Text = Val(Text27.Text) + Val(Text28.Text) + Val(Text29.Text)
+Text45.Text = Val(Text7.Text) + Val(Text8.Text) + Val(Text9.Text)
+End Sub
+ 
+
+Private Sub Command1_Click()
+Label32.Visible = True
+ProgressBar1.Visible = True
+Timer1.Enabled = True
+
+
+End Sub
+
+Private Sub Form_Load()
+Label38.Caption = Form2.Text3.Text & " " & Form2.Text4.Text
+Label39.Caption = Form2.Text5.Text
+Label41.Caption = Form2.Text7.Text & " " & Form2.Text10.Text
+Text1.Text = Form3.Text22.Text
+Text2.Text = Form3.Text26.Text
+Text3.Text = Form3.Text30.Text
+Text4.Text = Form3.Text34.Text
+Text5.Text = Form3.Text38.Text
+Text6.Text = Form3.Text42.Text
+Text7.Text = Val(Text1.Text) + Val(Text2.Text) + Val(Text3.Text) + Val(Text4.Text) + Val(Text5.Text) + Val(Text6.Text)
+Text8.Text = "18%"
+Dim a As Integer
+a = (Val(Text7.Text) * 18) / 100
+Text9.Text = Val(Text7.Text) + a
+Label9.Caption = Form3.Text43.Text
+Label12.Caption = Form3.Text44.Text
+Label15.Caption = Form3.Text45.Text
+Label18.Caption = Form3.Text46.Text
+Label21.Caption = Form3.Text47.Text
+Label24.Caption = Form3.Text48.Text
+Label49.Caption = Label9.Caption
+Label50.Caption = Label12.Caption
+Label55.Caption = Label15.Caption
+Label57.Caption = Label18.Caption
+Label59.Caption = Label21.Caption
+Label60.Caption = Label24.Caption
+Label53.Caption = Text1.Text
+Label54.Caption = Text2.Text
+Label56.Caption = Text3.Text
+Label58.Caption = Text4.Text
+Label61.Caption = Text5.Text
+Label62.Caption = Text6.Text
+Label64.Caption = Text9.Text
+
+End Sub
+
+Private Sub Frame1_DragDrop(Source As Control, X As Single, Y As Single)
+
+End Sub
+
+Private Sub Timer1_Timer()
+ProgressBar1.Value = ProgressBar1.Value + 5
+Label65.Caption = ProgressBar1.Value & "%"
+   If (ProgressBar1.Value = ProgressBar1.Max) Then
+   Timer1.Enabled = False
+   Frame2.Visible = True
+   End If
+End Sub
